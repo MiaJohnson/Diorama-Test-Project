@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Diorama.MainPage">
+
+  <ScrollView>
+    <VerticalStackLayout
+	Spacing="25"
+	Padding="30,0"
+	VerticalOptions="Center">
+
+      <Image
+		Source="logoimage.jpg"
+		HeightRequest="185"
+		Aspect="AspectFit"
+		SemanticProperties.Description="The light of a midnight moon" />
+
+      <Label
+		Text="Do you want to play a game?"
+		Style="{StaticResource SubHeadline}"
+		SemanticProperties.HeadingLevel="Level2"
+		SemanticProperties.Description="Do you want to play a game? There is a button below to start the game."/>
+
+      <Button
+		x:Name="btnStartGame"
+		Text="Start Game"
+		SemanticProperties.Hint="Start Game"
+		Clicked="OnStartGameClicked"
+		HorizontalOptions="Fill" />
+
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
